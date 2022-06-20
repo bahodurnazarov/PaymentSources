@@ -4,6 +4,8 @@ type Money int
 
 type Currency string
 
+type Category string
+
 type PAN string
 
 type PaymentSource struct {
@@ -15,6 +17,7 @@ type PaymentSource struct {
 type Payment struct {
 	ID     int
 	Amount Money
+	Category Category
 }
 
 type Card struct {
